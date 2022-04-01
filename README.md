@@ -4,7 +4,7 @@
 
 This is the project which helps to query Git info with SQL.
 
-By default, it uses [OpenMLDB](https://github.com/4paradigm/openmldb) to store data and visualize with [OpenMLDB LAB](https://github.com/tobegit3hub/openmldb_lab). 
+By default, it uses [OpenMLDB](https://github.com/4paradigm/openmldb) to store data and visualize with [OpenMLDB Lab](https://github.com/tobegit3hub/openmldb_lab). 
 
 ## Install
 
