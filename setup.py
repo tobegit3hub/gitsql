@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="gitsql",
-    version="0.1.0",
+    version="0.1.1.1",
     author="tobe",
     author_email="tobeg3oogle@gmail.com",
     url="https://github.com/tobegit3hub/gitsql",
@@ -16,7 +16,7 @@ setup(
         'Programming Language :: Python :: 3',
     ],
     install_requires=[
-        'openmldb>=0.4.2', 'openmldb_lab'
+        'GitPython', 'openmldb>=0.4.2', 'openmldb_lab'
     ],
     include_package_data=True,
     zip_safe=False,
