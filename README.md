@@ -1,4 +1,4 @@
-# gitsql - Query Git with SQL
+# gitsql
 
 ## Introduction 
 
@@ -39,3 +39,31 @@ pip install openmldb_lab
 
 openmldb_lab --zk=0.0.0.0:2181 --zk_path=/openmldb
 ```
+
+![](./images/gitsql_screenshot.png)
+
+## Use Cases
+
+### Query Large Insertions Commits
+
+```
+SELECT * FROM commit WHERE author = "tobe" AND insertions > 5000
+```
+
+![](./images/query_large_insertion.png)
+
+### Query Specified Commit
+
+```
+SELECT * FROM commit WHERE hexsha = "d039c6e74db30d4d7c423f7c24340192e1306d23"
+```
+
+![](./images/query_single_commit.png)
+
+### Query Developers with Specified Email
+
+```
+SELECT * FROM commit WHERE email LIKE "%gmail.com"
+```
+
+![](./images/query_gmail_developers.png)
